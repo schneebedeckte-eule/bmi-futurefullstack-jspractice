@@ -2,7 +2,7 @@
 
 let weight = parseInt(prompt("Enter your weight in kg"));
 let height = parseInt(prompt("Enter your height in cm")) / 100;
-let gender = prompt("Enter your gender as M or F");
+// let gender = prompt("Enter your gender as M or F");
 let bmiCategory;
 
 //BMI CALCULATION
