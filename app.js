@@ -12,15 +12,16 @@ let bmiRounded = bmi.toFixed(2);
 
 if (bmi < 18.5) {
   bmiCategory = "Underweight";
-} else if (bmi < 25) {
+} else if (bmi >= 18.5 && bmi < 25) {
   bmiCategory = "Healthy";
-} else if (bmi < 30) {
+} else if (bmi >= 25 && bmi < 30) {
   bmiCategory = "Overweight";
 } else if (bmi < 40) {
   bmiCategory = "Obese";
-} else if (bmi >= 40) {
+} else {
   bmiCategory = "severely Obese";
 }
+
 //OUTPUT
 
 let result = `Your weight is ${weight}kg, your height is ${height * 100}cm or ${height}m. Therefore your BMI is ${bmiRounded} which is ${bmiCategory}.`;
